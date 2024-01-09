@@ -1,0 +1,35 @@
+.services-descr{
+    padding: 9.6rem 0rem;
+    background-color: $background_grey;
+    .services-descr__container{
+        max-width: 111.4rem;
+    }
+    .services-descr__wrap{
+        display: flex;
+        align-items: center;
+        // height: 55rem;
+        gap: 7rem;
+    }
+    .services-descr__img-wrap{
+        img{
+            width: 55rem;
+        }
+    }
+    .services-descr__content{
+        padding: 1.8rem 2rem 2.9rem;
+        min-height: 55rem;
+    }
+    .services-descr__title{
+        font-family: Marcellus;
+        font-size: 4.4rem;
+        font-weight: 400;
+        line-height: 5.5rem;
+        letter-spacing: 0em;
+        color: $font-black;
+        span{
+            color: $gold;
+            font-weight: 700;
+        }
+        // font-weight: 700;
+    }
+}

@@ -1,0 +1,39 @@
+.hero{
+    // .hero__container{
+    //     max-width: 120.4rem;
+    //     margin: 0 auto;
+    //     // height: 100%;
+    // }
+    background-color: $navi;   ///
+    .hero__content-wrap{
+        min-height: 91.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        padding: 0rem 2rem 12.4rem;
+    }
+    .hero__main-button{
+        margin-top: 4.8rem;
+    }
+    .hero__description{
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        color: $white;
+        max-width: 78.8rem;
+        margin-top: 2.4rem;
+        letter-spacing: 0em;
+    }
+    .hero__title{
+        font-family: "Marcellus";
+        font-size: 8.4rem;
+        font-weight: 400;
+        line-height: 10.1rem;
+        letter-spacing: 0em;
+        color: $white;
+        span{
+            color: $gold;
+        }
+    }
+}

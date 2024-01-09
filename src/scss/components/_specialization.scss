@@ -1,0 +1,46 @@
+.specialization{
+    padding: 9.6rem 0rem;
+    .specialization__container{
+        max-width: 123.6rem;
+    }
+    .specialization__wrapper{
+        display: flex;
+        gap: 1.6rem;
+    }
+    .specialization__item{
+        width: 40.1rem;
+        padding: 11.8rem 5.2rem 7.3rem;
+        background-color: $background_grey;
+    }
+    .specialization__item_center{
+        background-color: $gold;
+        
+        .specialization__title::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0.1rem;
+            left: 0;
+            bottom: -2.4rem;
+            background-color: $font-black;
+        }
+    }
+    .specialization__title{
+        position: relative;
+        font-family: "Marcellus";
+        font-size: 4rem;
+        font-weight: 400;
+        line-height: 5rem;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 4.8rem;
+    }
+    .specialization__descr{
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}
