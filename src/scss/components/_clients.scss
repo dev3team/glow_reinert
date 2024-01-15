@@ -1,0 +1,180 @@
+.clients{
+    padding: 9.6rem 0rem;
+    .subtitle{
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3.9rem;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-bottom: 0.4rem;
+        color: $gold;
+    }
+    h2{
+        font-family: $marcellus;
+        font-size: 5.6rem;
+        font-weight: 400;
+        line-height: 7.4rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $gold;
+        margin-bottom: 2.4rem;
+        span{
+            color: $font-black;
+        }
+    }
+    .carousel-wrap{
+        position: relative;
+        width: 118.7rem;
+        margin: 0 auto;
+    }
+    .carousel-list{
+        padding: 0rem 19.6rem;
+    }
+    .carousel-item{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        align-items: center;
+        // img{
+        //     width: 21.9rem;
+        // }
+        .name{
+            font-family: "Palace Script MT";
+            font-size: 6.4rem;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 9.5rem;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $font-black;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 3rem;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #2E569E;
+            margin-bottom: 0;
+        }
+    }
+    .slick-track{
+        display: flex;
+        // align-items: center;
+        height: 100%;
+    }
+    .slick-list{
+        overflow: hidden;
+        height: 100%;
+    }
+    .arrow {
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        img{
+            height: 2.94rem;
+        } 
+    }
+    .carousel__prev-arrow{
+        left: 0;
+    }
+    .carousel__next-arrow{
+        right: 0;
+    }
+    
+    // .slick-arrow{
+    //     background: transparent;
+    //     cursor: pointer;
+    //     font-size: 0px;
+    // }
+    // .slick-arrow:before{
+    //     content: "";
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     width: 3.2rem;
+    //     height: 3.2rem;
+    //     display: inline-block;
+    // }
+    // .carousel__prev-arrow:before{
+    //     background-image: url(../image/icons/carousel-arrow-left.webp);
+    //     height: 20px;
+    // }
+    // .carousel__next-arrow:before{
+    //     background-image: url(../image/icons/carousel-arrow-right.webp);
+    // }
+    .carousel__dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 4.8rem;
+    }
+    .slick-dots{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        gap: 1.2rem;
+        li{
+            cursor: pointer;
+            width: 0.8rem;
+            height: 0.8rem;
+            background-color: #BDBDBD;
+            border-radius: 50%;
+        }
+        button{
+            background: transparent;
+            font-size: 0px;
+            border: none;
+        }
+        // button:before{
+        //     content: "";
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     width: 0.8rem;
+        //     height: 0.8rem;
+        //     display: inline-block;
+        //     background-color: #BDBDBD;
+        //     border-radius: 50%;
+        // }
+        .slick-active{
+            width: 1rem;
+            height: 1rem;
+            background-color: $gold;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .clients{
+        padding: 4.8rem 0rem;
+        h2{
+            font-size: 3.2rem;
+            line-height: 4rem;
+        } 
+        .subtitle{
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+        .carousel-wrap{
+            width: 34.3rem;
+        }
+        .carousel-list{
+            padding: 0rem 2.6rem;
+        }
+        .carousel-item img{
+            width: 18rem;
+        }
+        .carousel-item p{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        .carousel__dots{
+            margin-top: 2.4rem;
+        }
+        .carousel-item .name{
+            font-size: 4.8rem;
+            line-height: 4.8rem;
+        }
+
+    }
+}

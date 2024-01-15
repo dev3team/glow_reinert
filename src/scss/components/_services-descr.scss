@@ -11,13 +11,24 @@
         gap: 7rem;
     }
     .services-descr__img-wrap{
+        position: relative;
+        width: 55rem;
+        height: 55rem;
         img{
-            width: 55rem;
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        
         }
     }
     .services-descr__content{
-        padding: 1.8rem 2rem 2.9rem;
+        padding: 1.8rem 0rem 2.9rem 0rem;
         min-height: 55rem;
+        max-width: 49.4rem;
     }
     .services-descr__title{
         font-family: Marcellus;
@@ -25,11 +36,103 @@
         font-weight: 400;
         line-height: 5.5rem;
         letter-spacing: 0em;
+        margin-bottom: 4.17rem;
         color: $font-black;
         span{
             color: $gold;
-            font-weight: 700;
         }
         // font-weight: 700;
+    }
+    .services-descr__text{
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $font-black;
+        margin-bottom: 7.35rem;
+    }
+    .services-descr__main-button{
+        .main-button__img{
+            background-color: $navy;
+        }
+    }
+    .services-descr__experience{
+        position: absolute;
+        bottom: 2.86rem;
+        left: -7.15rem;
+        height: 9.43rem;
+        width: 29rem;
+        background-color: $background_grey;
+        padding: 0.76rem 2.3rem 0.76rem 2.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    }
+    .services-descr__experience-years{
+        font-size: 6.4rem;
+        font-weight: 400;
+        line-height: 8.3rem;
+        letter-spacing: 0em;
+        color: $gold;
+    }
+    .services-descr__experience-text{
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        letter-spacing: 0em;
+        color: $font-black;
+    }
+}
+
+@media (max-width: 768px){
+    .services-descr{
+        padding: 4.8rem 0rem;
+        .services-descr__container{
+            max-width: 37.5rem;
+            padding: 0 1.6rem;
+        }
+        .services-descr__wrap{
+            flex-direction: column;
+            width: 34.3rem;
+            gap: 3.6rem;
+        }
+        .services-descr__img-wrap{
+            width: 34.3rem;
+            height: 34.3rem;
+        }
+        .services-descr__experience{
+            left: 2rem;
+            bottom: 2rem;
+            height: 6rem;
+            width: 18rem;
+            padding-left: 1.8rem;
+            padding-right: 1.8rem;
+        }
+        .services-descr__experience-years{
+            font-size: 3.2rem;
+            line-height: 4rem;
+        }
+        .services-descr__experience-text{
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+        .services-descr__content{
+            padding: 0;
+        }
+        .services-descr__title{
+            font-size: 3.2rem;
+            line-height: 4rem;
+            margin-bottom: 2.4rem;
+        }
+        .services-descr__text{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin-bottom: 2.4rem;
+        }
+        .services-descr__content{
+            min-height: auto;
+        }
     }
 }

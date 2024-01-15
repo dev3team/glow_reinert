@@ -1,0 +1,132 @@
+.experts{
+    padding: 12.8rem 0rem 10.2rem;
+    .container{
+        max-width: 120rem;
+    }
+    h2{
+        font-family: $marcellus;
+        font-size: 5.6rem;
+        font-weight: 400;
+        line-height: 6.9rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $font-black;
+        margin-bottom: 7.2rem;
+        span{
+            color: $gold;
+        }
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 7.2rem;
+    }
+    li{
+        position: relative;
+        width: 35.3rem;
+        height: 40.3rem;
+        & > img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        overflow: hidden;
+    }
+    .description{
+        cursor: pointer;
+        padding: 3.2rem 2.8rem 5.8rem;
+        position: absolute;
+        bottom: -9.2rem;
+        left: 0;
+        width: 100%;
+        height: 19.1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.8rem;
+        background-color: $background_grey;
+        transition: all ease 0.5s;
+        &:hover{
+            background-color: $dark-blue;
+            bottom: -0.1rem;
+            padding-top: 5.3rem;
+            gap: 2rem;
+            .name{
+                color: $white;
+            }
+        }
+    }
+    .name{
+        font-family: $marcellus;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $font-black;
+    }
+    .socials{
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        position: relative;
+        a{
+            cursor: pointer;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: 0.1rem solid $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 1.25rem;
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 50%;
+            transform: translateY(-50%);
+            background-color:#BDBDBD;
+            width: 7.5rem;
+            height: 0.1rem;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(-50%);
+            background-color:#BDBDBD;
+            width: 7.5rem;
+            height: 0.1rem;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .experts{
+        padding: 4.8rem 0rem; 
+        .container{
+            padding: 0rem 1.6rem;
+        }
+        h2{
+            font-size: 3.2rem;
+            line-height: 4rem;
+            margin-bottom: 2.4rem;
+        }
+        ul{
+            row-gap: 2.4rem;
+        }
+        li{
+            width: 34.3rem;
+            height: 39.14rem;
+        }
+    }
+}

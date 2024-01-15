@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Creattion Demo';
+    src: url('CreattionDemo.eot');
+    src: url('CreattionDemo.eot?#iefix') format('embedded-opentype'),
+        url('CreattionDemo.woff2') format('woff2'),
+        url('CreattionDemo.woff') format('woff'),
+        url('CreattionDemo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

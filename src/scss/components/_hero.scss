@@ -4,14 +4,15 @@
     //     margin: 0 auto;
     //     // height: 100%;
     // }
-    background-color: $navi;   ///
+    position: relative;
+    background-color: $navy; /////
     .hero__content-wrap{
-        min-height: 91.5rem;
+        // min-height: 91.5rem;
         display: flex;
         flex-direction: column;
         justify-content: end;
         height: 100%;
-        padding: 0rem 2rem 12.4rem;
+        padding: 0rem 2rem;
     }
     .hero__main-button{
         margin-top: 4.8rem;
@@ -26,7 +27,7 @@
         letter-spacing: 0em;
     }
     .hero__title{
-        font-family: "Marcellus";
+        font-family: "Marcellus", sans-serif;
         font-size: 8.4rem;
         font-weight: 400;
         line-height: 10.1rem;
@@ -34,6 +35,360 @@
         color: $white;
         span{
             color: $gold;
+        }
+    }
+    .hero__background_video{
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.hero-img{
+    padding: 29rem 0rem 14.5rem;
+    position: relative;
+    .hero__background{
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .hero__container{
+        max-width: 122.4rem;
+    }
+    .wrapper{
+        display: flex;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+    .title{
+        font-family: $marcellus;
+        font-size: 6.4rem;
+        font-weight: 400;
+        line-height: 8.3rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $white;
+        min-width: 75rem;
+        span{
+            color: $gold;
+        }
+    }
+    .subtitle{
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $white;
+        max-width: 35rem;
+    }
+    .hero__main-button{
+        margin-top: 2.8rem;
+    }
+}
+
+.hero-practice{
+    padding: 26.5rem 0 17.9rem;
+    .text{
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3.9rem;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: $gold;
+        margin-bottom: 2.4rem;
+    }
+    .title{
+        min-width: 66.5rem;
+        margin-bottom: 0rem;
+    }
+    .subtitle{
+        padding-top: 1.4rem;
+        max-width: 41.9rem;
+    }
+    .wrapper{
+        gap: 11rem;
+    }
+}
+
+.hero-services{
+    padding: 35rem 0 22.7rem;
+    .title{
+        font-family: $marcellus;
+        font-size: 9.2rem;
+        font-weight: 400;
+        line-height: 11.0rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $white;
+    }
+}
+
+.hero-contact{
+    padding: 25.1rem 0rem 9.7rem;
+    .container{
+        max-width: 120rem;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form-container{
+        width: 50.6rem;
+    }
+    .title-wrap{
+        max-width: 53.7rem;
+        h1{
+            font-family: $marcellus;
+            font-size: 9.2rem;
+            font-weight: 400;
+            line-height: 11rem;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $white;
+            span{
+                color: $gold;
+            }
+        }
+        .subtitle{
+        text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 3.9rem;
+            letter-spacing: 0.1em;
+            text-align: left;
+            color: $gold;
+            margin-bottom: 0.4rem;
+        }
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3.6rem;
+        row-gap: 4.284rem;
+        justify-content: end;
+
+        input, textarea{
+            width: 100%;
+            padding: 1.6rem;
+            height: 5.916rem;
+            background-color: rgba(189, 189, 189, 0.4);
+            border: none;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.6rem;
+            letter-spacing: 0em;
+            color: $white;
+        }
+        input:focus, textarea:focus{
+            outline: none;
+        }
+        input::placeholder, textarea::placeholder{
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.6rem;
+            letter-spacing: 0em;
+            color: $white;
+            text-transform: uppercase;
+        }
+        textarea{
+            resize: none;
+            height: 12.34rem;
+        }
+        input:nth-child(1),
+        input:nth-child(2){
+            width: calc(50% - 1.8rem) ;
+        }
+        button{
+            margin-top: 1.8rem;
+            background-color: transparent;
+            border: none;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 2.4rem;
+            letter-spacing: 0em;
+            color: $gold;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-right: 0.5rem;
+            &:focus{
+              outline: none;  
+            }
+        }
+    }
+}
+
+.hero-error-page{
+    padding: 22.3rem 0rem 8.5rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-family: $marcellus;
+        font-size: 30rem;
+        font-weight: 400;
+        line-height: 33.6rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $white;
+        margin-bottom: 0.2rem;
+        span{
+            color: $gold;
+        }
+    }
+    h2{
+        font-family: $marcellus;
+        font-size: 8.8rem;
+        font-weight: 400;
+        line-height: 11.4rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $white;
+        margin-bottom: 2.5rem;
+        span{
+            color: $gold;
+        }
+    }
+    p{
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 5.3rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $white;
+        margin-bottom: 6.28rem;
+    }
+}
+
+.hero-video{
+    background-color: transparent;
+    padding: 33.7rem 0rem 12.4rem;
+}
+
+@media (max-width: 768px){
+    .hero{
+        .hero__container{
+            padding: 0rem 1.6rem;
+        }
+        .hero__title{
+            font-size: 3.2rem;
+            line-height: 4rem;
+        }
+        .hero__description{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            margin-top: 1.4rem;
+        }
+        .hero__content-wrap{
+            padding: 0rem 0rem;
+        }
+    }
+    
+    .hero-video{
+        padding: 18rem 0rem 4.8rem;
+    }
+    .hero-img{
+        padding: 18rem 0rem 4.8rem;
+        .hero__container{
+            max-width: 37.5rem;
+        }
+        .title{
+            font-size: 3.2rem;
+            line-height: 4rem;
+            min-width: auto;
+        }
+        .wrapper{
+            flex-direction: column;
+            gap: 1.4rem;
+        }
+        .subtitle{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        } 
+    }
+    .hero-practice{
+        .container{
+            padding: 0rem 1.6rem;
+        }
+        .text{
+            font-size: 2.4rem;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .hero-services{
+        .container{
+            padding: 0rem 1.6rem;
+        }
+    }
+    .hero-contact{
+        .container{
+            max-width: 37.5rem;
+            padding: 0rem 1.6rem;
+        }
+        .wrapper{
+            align-items: flex-start;
+        }
+        .title-wrap{
+            h1{
+                font-size: 3.2rem;
+                line-height: 4rem;
+            }
+            .subtitle{
+                font-size: 2.4rem;
+                line-height: 3rem;
+                padding-top: 0rem;
+            }
+        }
+        .form-container{
+            width: 100%;
+        }
+        form{
+            row-gap: 2rem;
+            input{
+                height: 5rem;
+            }
+            input:nth-child(1), input:nth-child(2){
+                width: 100%;
+            }  
+            button{
+                margin-top: 0rem;
+            }
+        }
+    }
+    .hero-error-page{
+        .container{
+            padding: 0rem 1.6rem;
+        }
+        h1{
+            font-size: 8.8rem;
+            line-height: 12rem;
+        }
+        h2{
+            font-size: 3.2rem;
+            line-height: 4rem;
+        }
+        p{
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            margin-bottom: 2rem;
         }
     }
 }

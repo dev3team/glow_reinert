@@ -1,0 +1,126 @@
+.services-section{
+    padding: 12.8rem 0rem;
+    background-color: $white;
+    .services-section__container{
+        max-width: 120rem;
+    }
+    .services__list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12.8rem;
+        li{
+            display: flex;
+            justify-content: space-between;
+            &:nth-child(even){
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    .img__wrap{
+        width: 50.7rem;
+        height: 50.7rem;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .content-wrapper{
+        width: 60.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        p{
+            margin-bottom: 0;
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 3.3rem;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $font-grey;
+        }
+    }
+    .img-box{
+        width: 6.4rem;
+        height: 6.4rem;
+        border-radius: 50%;
+        background-color: $gold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 4.6rem;
+            height: 2.7rem;
+        }
+    }
+    .content-title{
+        font-family: $marcellus;
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 4.5rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $font-black;
+    }
+    .content-sub-title{
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $font-black;
+    }
+}
+
+@media (max-width: 768px){
+    .services-section{
+        padding: 4.8rem 0rem;
+        .services-section__container{
+            max-width: 37.5rem;
+            padding: 0rem 1.6rem;
+        }
+        .services__list{
+            gap: 3.2rem;
+            li{
+                flex-direction: column;
+            }
+        }
+         
+        .content-wrapper{
+            margin-top: 1.6rem;
+            width: auto;
+            gap: 1rem;
+            p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+        }
+        .img__wrap{
+            width: 34.3rem;
+            height: 34.3rem;
+        }
+        .img-box{
+            width: 4rem;
+            height: 4rem;
+            img{
+                width: 3rem;
+                height: 1.76rem;
+            }
+        }
+        .content-title{
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+        .content-sub-title{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+        .services__list li:nth-child(even){
+            flex-direction: column;
+        }
+    }
+}

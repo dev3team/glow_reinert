@@ -1,0 +1,182 @@
+.employees{
+    padding: 12.8rem 0rem 16.8rem 0rem;
+    background-color: $white;
+    .employees__container{
+        max-width: 119.2rem;
+    }
+    h2{
+        font-family: $marcellus;
+        font-size: 5.6rem;
+        font-weight: 400;
+        line-height: 6.9rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $font-black;
+        margin-bottom: 7.2rem;
+        span{
+            color: $gold;
+        }
+    }
+    p{
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 3.3rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $font-black;
+        margin-bottom: 7.2rem;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        gap: 7.2rem;
+        flex-wrap: wrap;
+        
+        li{
+            cursor: pointer;
+            width: 56rem;
+            height: 46.4rem;
+            position: relative;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .employee__name{
+                height: 12.9rem;
+                width: 100%;
+                background-color: $navy;
+                font-family: $marcellus;
+                font-size: 4rem;
+                font-weight: 400;
+                line-height: 4.8rem;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: $background_grey;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                left: 0;
+                bottom: 0;
+            }
+            &:hover .employees__about{
+                opacity: 1;
+            }
+        }
+    }
+    .employees__about{
+        transition: opacity ease 0.3s;
+        opacity: 0;
+        padding: 4.5rem 7.6rem;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: $navy;
+        .title{
+            font-family: $marcellus;
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 4.8rem;
+            letter-spacing: -0.02em;
+            text-align: center;
+            margin-bottom: 4.4rem;
+            color: #E6E6E6;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                font-family: $inter;
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 2.6rem;
+                letter-spacing: 0em;
+                text-align: center;
+                margin-bottom: 2.6rem;
+                color: #E6E6E6;
+            }
+            a.more{
+                font-family: $inter;
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 2.6rem;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #E6E6E6;
+                margin-bottom: 2.4rem;
+                text-decoration: none;
+            }
+            img{
+                width: 7.6rem;
+                height: 7.6rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .employees{
+        padding: 4.8rem 0rem;
+        .employees__container{
+            max-width: 37.5rem;
+            padding: 0rem 1.6rem;
+        } 
+        h2{
+            font-size: 3.2rem;
+            line-height: 4rem;
+            margin-bottom: 2.4rem;
+            text-align: left;
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            margin-bottom: 3.2rem;
+        }
+        ul{
+            gap: 3.2rem;
+            li{
+                width: 100%;
+                height: 32rem;
+                .employee__name{
+                    font-size: 2.8rem;
+                    line-height: 4rem;
+                    height: 8rem;
+                }
+                // pointer-events: none;
+                // &:hover .employees__about{
+                //     opacity: 0;
+                // }
+            }
+        }
+        .employees__about{
+            padding: 2.4rem;
+            .title{
+                font-size: 2.4rem;
+                margin-bottom: 2.4rem;
+                line-height: 3rem;
+            }
+            .content{
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    margin-bottom: 1.6rem;
+                }
+                a.more {
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    margin-bottom: 1rem;
+                }
+                img{
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+            
+        }
+    }
+}

@@ -10,7 +10,7 @@ html{
         font-size: calc(10/1440 * 100vw);
     }
 
-    @media (max-width: 700px){
+    @media (max-width: 768px){
         font-size: calc(10/375 * 100vw);
     }
 }
@@ -26,11 +26,15 @@ body{
 .container{
     max-width: 124.8rem;
     margin: 0 auto;
+    @media (max-width: 768px) {
+        max-width: 37.5rem;
+    }
 }
 
 .main-button{
     height: 6rem;
-    width: 35.8rem;
+    // width: 35.8rem;
+    width: fit-content;
     text-transform: uppercase;
     display: flex;
     text-decoration: none;
@@ -39,12 +43,12 @@ body{
         display: inline-block;
         padding: 1.9rem 3.5rem 1.8rem 3.1rem;
         height: 100%;
-        width: 32rem;
+        // width: 32rem;
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 2.3rem;
         // letter-spacing: 0em;
-        color: $navi;
+        color: $navy;
         background-color: $gold;
     }
     .main-button__img{
@@ -63,7 +67,36 @@ body{
     text-decoration: none;
 }
 
+@media (max-width: 768px){
+    .main-button{
+        height: 4.2rem;
+        .main-button__text{
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 1.2rem 2.4rem;
+        }
+        .main-button__img{
+            width: 3.2rem;
+            img{
+                width: 0.7rem;
+            }
+        }
+    }
+}
+
 @import 'components/header';
 @import 'components/_hero';
 @import 'components/specialization';
 @import 'components/services-descr';
+@import 'components/achievements';
+@import 'components/clients';
+@import 'components/consultation-section';
+@import 'components/employees';
+@import 'components/process';
+@import 'components/form-section';
+@import 'components/areas';
+@import 'components/services-section';
+@import 'components/contact-section';
+@import 'components/details';
+@import 'components/experts';
+@import 'components/footer';

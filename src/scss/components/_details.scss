@@ -1,0 +1,150 @@
+.details{
+    padding: 13.1rem 0rem;
+    background-color: $background_grey;
+    h2{
+        font-family: $marcellus;
+        font-size: 5.6rem;
+        font-weight: 400;
+        line-height: 7.4rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $navy;
+    }
+    .subtitle{
+        font-family: $marcellus;
+        font-size: 2.6rem;
+        font-weight: 400;
+        line-height: 3.4rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $navy;
+        margin-bottom: 3.6rem;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .description{
+        max-width: 76.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+    }
+    .main-descr{
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 3.3rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $font-black;
+    }
+    .text{
+        display: flex;
+        gap: 2.8rem;
+        p{
+            max-width: calc(50% - 1.4rem);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $font-black;
+            margin-bottom: 0;
+        }
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-wrap{
+        width: 39.65rem;
+        height: 49.5rem;
+        margin-bottom: 3.6rem;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .signature{
+        margin-bottom: 0.9rem;
+        font-family: 'Creattion Demo';
+        font-size: 7.2rem;
+        font-weight: 400;
+        line-height: 8.5rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $gold;
+    }
+    .name{
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.3rem;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: $gold;
+    }
+}
+.details-profile{
+    padding-top: 25.2rem;
+}
+
+@media (max-width: 768px){
+    .details{
+        padding: 4.8rem 0rem;
+        .container{
+            padding: 0rem 1.6rem;
+        }
+        h2{
+            font-size: 3.2rem;
+            line-height: 4rem;
+        }
+        .subtitle{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-bottom: 2.4rem;
+        }
+        .wrapper{
+            flex-direction: column;
+        }
+        .main-descr{
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+        .description{
+            gap: 1.6rem;
+        }
+        .text{
+            flex-direction: column;
+            p{
+                max-width: 100%;
+                line-height: 2.2rem;
+            }
+        }
+        .img-wrap{
+            width: 34.3rem;
+            height: 42.7rem;
+            margin-bottom: 2.4rem;
+        }
+        .main-content{
+            margin-top: 2.4rem;
+        }
+        .signature{
+            font-size: 4.8rem;
+            line-height: 5.6rem;
+            margin-bottom: 0rem;
+        }
+        .name{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+    }
+    .details-profile{
+        padding-top: 12.8rem;
+    }
+    
+   
+    
+}

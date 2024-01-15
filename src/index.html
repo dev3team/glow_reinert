@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fonts/Marcellus/stylesheet.css">
     <link rel="stylesheet" href="fonts/DMSans/stylesheet.css">
     <link rel="stylesheet" href="fonts/Playfair-display/stylesheet.css">
+    <link rel="stylesheet" href="fonts/PalaceScriptMT/stylesheet.css">
     <link rel="stylesheet" href="scss/style.min.css">
     <title>Reinert</title>
 </head>
@@ -15,27 +16,37 @@
     <header class="header">
         <div class="container">
             <div class="header__container">
+                <div class="header__burger burger">
+                    <img src="image/icons/burger_line.webp" alt="burger_line" class="burger__line">
+                    <img src="image/icons/burger_line.webp" alt="burger_line" class="burger__line">
+                    <img src="image/icons/burger_line.webp" alt="burger_line" class="burger__line">
+                </div>
                 <a href="#" class="header__logo"><img src="image/img/Logo.webp" alt="logo"></a>
                 <nav class="header__menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="/" class="menu__link">About</a></li>
-                        <li class="menu__item"><a href="/practice-areas" class="menu__link">PRACTICE AREAS</a></li>
-                        <li class="menu__item"><a href="/services" class="menu__link">SERVICES</a></li>
+                        <li class="menu__item"><a href="pages/about">About</a></li>
+                        <li class="menu__item"><a href="pages/practice-areas">PRACTICE AREAS</a></li>
+                        <li class="menu__item"><a href="pages/services">SERVICES</a></li>
                     </ul>
+                    <a href="tel:+781.431.7766" class="header__phone header__phone_mobile"><img src="image/icons/phone_icon.webp" alt="phone">+781.431.7766</a>
                 </nav>
                 <a href="tel:+781.431.7766" class="header__phone"><img src="image/icons/phone_icon.webp" alt="phone">+781.431.7766</a>
             </div>
         </div>
     </header>
+    
     <main>
-        <section class="hero">
+        <section class="hero hero-video">
+            <video class="hero__background_video" width="100%" loop muted autoplay>
+                <source src="https://player.vimeo.com/external/538561465.sd.mp4?s=786eeae0e3c0f89892c3c0ef13d59127799f3182&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+            </video>
             <div class="container hero__container">
                 <div class="hero__content-wrap">
                     <h1 class="hero__title title">
                         Experience. Integrity.<br/> Empathy. <span>Results.</span>
                     </h1>
                     <div class="hero__description">Providing comprehensive legal services within the Commonwealth of Massachusetts for individuals and their families. We specialize in guiding our clients through complex family law issues, estate planning, and related litigation matters, while operating on the principles of trust, open communication, and most of all, results.</div>
-                    <a href="#" class="hero__main-button main-button">
+                    <a href="pages/contact" class="hero__main-button main-button">
                         <span class="main-button__text">CALL FOR A Consultation</span>
                         <span class="main-button__img">
                             <img src="image/icons/main-btn-arrow.webp" alt="btn">
@@ -80,6 +91,10 @@
                 <div class="services-descr__wrap">
                     <div class="services-descr__img-wrap">
                         <img src="image/img/Anton_1.webp" alt="Anton_1">
+                        <div class="services-descr__experience">
+                            <div class="services-descr__experience-years">20+</div>
+                            <div class="services-descr__experience-text">Years<br/> Experience</div>
+                        </div>
                     </div>
                     <div class="services-descr__content">
                         <h2 class="services-descr__title">
@@ -88,17 +103,154 @@
                         <div class="services-descr__text">
                             Our practice focuses on complex estate and family litigation matters, including will contests, fiduciary responsibility, and division of marital estates. We have tried numerous cases in the state and federal courts, as well as successfully assisted in bringing many cases to resolution through alternate means.
                         </div>
-                        <a href="#" class="main-button">
-                            <span class="main-button__text">CALL FOR A Consultation</span>
+                        <a href="pages/about" class="services-descr__main-button main-button">
+                            <span class="main-button__text">MEET OUR TEAM</span>
                             <span class="main-button__img">
-                                <img src="image/icons/main-btn-arrow.webp" alt="btn">
+                                <img src="image/icons/main-btn-arrow-white.webp" alt="btn">
                             </span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="achievements">
+            <div class="achievements__container container">
+                <div class="achievements__wrap">
+                    <div class="achievements__item">
+                        <div class="achievements__item-top">2000</div>
+                        <div class="achievements__item-bottom">ESTABLISHED</div>
+                    </div>
+                    <div class="achievements__item">
+                        <div class="achievements__item-top">456</div>
+                        <div class="achievements__item-bottom">POSITIVE<br/> OUTCOMES</div>
+                    </div>
+                    <div class="achievements__item">
+                        <div class="achievements__item-top">1764</div>
+                        <div class="achievements__item-bottom">TRISTED<br/> CLIENETS</div>
+                    </div>
+                    <div class="achievements__item">
+                        <div class="achievements__item-top">358</div>
+                        <div class="achievements__item-bottom">CLIENTS<br/> REFERRED</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="container">
+                <div class="subtitle">Testimonials</div>
+                <h2>Clients <span>Advocates</span></h2>
+                <div class="carousel-wrap">
+                    <div class="carousel-list">
+                        <div class="carousel-item">
+                            <!-- <img src="image/img/Jordan Billy.webp" alt="Jordan Billy"> -->
+                            <div class="name">Jordan Billy</div>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img src="image/img/Jordan Billy.webp" alt="Jordan Billy"> -->
+                            <div class="name">Jordan Billy</div>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img src="image/img/Jordan Billy.webp" alt="Jordan Billy"> -->
+                            <div class="name">Jordan Billy</div>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        </div>
+                    </div>
+                    <div class="carousel__prev-arrow arrow">
+                        <img src="image/icons/carousel-arrow-left.webp" alt="">
+                    </div>
+                    <div class="carousel__next-arrow arrow">
+                        <img src="image/icons/carousel-arrow-right.webp" alt="">
+                    </div>
+                    <div class="carousel__dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="consultation-section">
+            <div class="consultation-section__container container">
+                <div class="consultation-section__video-wrap">
+                    <video width="100%" loop muted autoplay>
+                        <source src="https://player.vimeo.com/external/538561465.sd.mp4?s=786eeae0e3c0f89892c3c0ef13d59127799f3182&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+                    </video>
+                </div>
+                <div class="content">
+                    <div class="subtitle">Accumsan nisi quis</div>
+                    <h2>
+                        Nulla <span>mattis purus</span> enim nisi
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="pages/contact">
+                        <span>REQUEST Consultation</span>
+                        <img src="image/icons/arrow_right.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-content">
+                    <a href="#">
+                        <img src="image/img/Logo_footer.webp" alt="Logo">
+                    </a>
+                    <p>
+                        Feugiat aenean arcu ipsum nulla nunc in. Velit in pulvinar scelerisque accumsan nisl. Dignissim viverra nunc eget sed ut adipiscing vitae vitae dignissim. Odio a magna fermentum a. Turpis netus turpis cursus quis in pellentesque dui cras.
+                    </p>
+                    <div class="contact">
+                        <span>Ten Laurel Avenue<br/> Second Floor<br/> Wellesley Hills, MA 02481</span>
+                        <a href="tel:+781.431.7766" class="phone">781.431.7766</a>
+                    </div>
+                </div>
+                <div class="footer-nav-wrap">
+                    <nav>
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="pages/about">About</a></li>
+                            <li class="menu__item"><a href="pages/practice-areas">PRACTICE AREAS</a></li>
+                            <li class="menu__item"><a href="pages/services">SERVICES</a></li>
+                        </ul>
+                    </nav>
+                    <div class="form-wrap">
+                        <h3>Do you have a <span>confidential</span> question?</h3>
+                        <form action="" method="">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="LAST Name">
+                            <input type="email" placeholder="Email address">
+                            <textarea placeholder="Leave us a secure message" rows="2"></textarea>
+                            <button type="submit">Send Message <img src="image/icons/arrow_right.webp" alt="arrow"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a class="link-icon" href="https://www.linkedin.com/">
+                    <img src="image/icons/LinkedIn.webp" alt="LinkedIn">
+                </a>
+                <div class="footer-bottom-nav">
+                    <span><span class="year"></span> ©Anton R. Reinert & Associates</span>
+                    <ul>
+                        <li>
+                            <a href="#">Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Security</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Statement</a>
+                        </li>
+                    </ul>
+                </div>
+                <p>This website and all its contents have been prepared by Anton R. Reinert & Associates solely for informational purposes. This information may be considered advertising under the Rules of the Supreme Judicial Court of Massachusetts. The contents of this website are not to be considered to be legal advice as this website is not intended as a substitute for legal counsel. As such, no one should act upon any information contained in this website without first seeking legal counsel. Please be advise</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

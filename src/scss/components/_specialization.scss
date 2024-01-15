@@ -44,3 +44,31 @@
 
     }
 }
+
+@media (max-width: 768px){
+    .specialization{
+        padding: 4.8rem 0rem;
+        .specialization__container{
+            max-width: 37.5rem;
+            padding: 0 1.6rem;
+        }
+        .specialization__wrapper{
+            flex-direction: column;
+        }
+        .specialization__item{
+            width: auto;
+            padding-top: 6rem;
+        }
+        .specialization__descr{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        .specialization__title{
+            font-size: 3.2rem;
+            margin-bottom: 2rem;
+        }
+        .specialization__item_center .specialization__title::after{
+            bottom: -1rem;
+        }
+    }
+}
