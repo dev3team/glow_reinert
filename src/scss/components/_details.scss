@@ -9,6 +9,7 @@
         letter-spacing: 0em;
         text-align: center;
         color: $navy;
+        margin-bottom: -5px;
     }
     .subtitle{
         font-family: $marcellus;
@@ -53,6 +54,7 @@
         }
     }
     .main-content{
+        margin-top: 1.3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -79,6 +81,7 @@
         color: $gold;
     }
     .name{
+        text-transform: uppercase;
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 2.3rem;

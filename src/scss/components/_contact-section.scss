@@ -30,8 +30,9 @@
         }
     }
     .contacts-wrap{
-        width: 50.6rem;
+        width: 47.8rem;
         .subtitle{
+            text-transform: uppercase;
             font-size: 3rem;
             font-weight: 400;
             line-height: 3.9rem;
@@ -47,8 +48,11 @@
             line-height: 7.4rem;
             letter-spacing: 0em;
             text-align: left;
-            color: $font-black;
+            color: $gold;
             margin-bottom: 4.8rem;
+            span{
+                color: $font-black;
+            }
         }
     }
     .contacts{
@@ -100,6 +104,7 @@
     }
     .main-button__text{
         color: #090B1F;
+        font-weight: 700;
     }
 }
 
