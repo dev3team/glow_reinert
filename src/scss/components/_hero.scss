@@ -140,6 +140,7 @@
         letter-spacing: 0em;
         text-align: center;
         color: $white;
+        margin: 0 auto;
     }
 }
 
@@ -151,7 +152,6 @@
     .wrapper{
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
     .form-container{
         width: 50.6rem;
@@ -398,6 +398,11 @@
             font-size: 1.8rem;
             line-height: 2.4rem;
             margin-bottom: 2rem;
+        }
+    }
+    .hero-team{
+        .subtitle{
+            margin-right: 0rem;
         }
     }
 }
